@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সংখ্যা পদ্ধতি কনভার্টার</title>
+    <link rel="stylesheet" href="git.css">
+</head>
+
+<body>
+    <h1>সংখ্যা পদ্ধতি কনভার্টার</h1>
+
+    <label for="numberInput">সংখ্যা লিখুন:</label>
+    <input type="text" id="numberInput" placeholder="সংখ্যা লিখুন">
+
+    <label for="baseInput">ইনপুট সংখ্যা পদ্ধতি:</label>
+    <select id="baseInput">
+        <option value="10">Decimal</option>
+        <option value="2">Binary</option>
+        <option value="8">Octal</option>
+        <option value="16">Hexadecimal</option>
+    </select>
+
+    <label for="baseOutput">আউটপুট সংখ্যা পদ্ধতি:</label>
+    <select id="baseOutput">
+        <option value="2">Binary</option>
+        <option value="8">Octal</option>
+        <option value="10">Decimal</option>
+        <option value="16">Hexadecimal</option>
+    </select>
+
+    <button onclick="convert()">Convert</button>
+
+    <h2>রূপান্তর ফলাফল:</h2>
+    <p id="output"></p>
+
+    <script src="git.js"></script>
+</body>
+
+</html>
